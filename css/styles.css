@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    padding: 0;
+    margin-bottom: 4.5rem;
+}
+
+#logo-complejo {
+    height: 10rem;
+    border-radius: 20%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 40px;
+}
+
