@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------------- Nav Bar---------------- */
+.navbar-dark .navbar-nav .nav-link {
+    color: aliceblue;
+}
+
+#logo {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.bg-dark {    
+    background-color:rgba(0, 0, 0, .5)!important;     
+    background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0), rgba(255, 255, 255, 3));
+} 
+
+header {
+    width: 100%;
+    height: 600px;     
+    background-image: url("../img/encabezado.jpg");   
+    background-repeat: no-repeat;
+}
+
+
+.container-header{    
+    padding-top: 110px;
+    text-align: center;
+}
+
+.container-slogan{   
+    width: 300px;   
+    margin-left: auto;
+    margin-right: auto; 
+        
+}
+
+#booking{
+    background-color: rgba(255, 255, 255, .5);
+    width: 300px;
+    height: 400px;
+
+  
+}
+

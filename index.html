@@ -1,66 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre del Complejo</title>
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
-    
+
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5a5f6155f2.js" crossorigin="anonymous"></script>
 
     <!-- Stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
-    
+
 </head>
+
 <body>
+
     <header>
         <!-- contenedor para la barra de navegacion y logo -->
-        <div> 
-            <div id="logo"><img src="/img/logo.jpg" alt="Logo del Complejo"></div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a href="#"><img id="logo" src="img/Logo.PNG" alt="Logo del Complejo"></a>
+            <h1 id="titulo-complejo">Nombre Del Complejo</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#complejo">Complejo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#atracciones">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">Lenguaje</a>
 
-            <nav id="barra-nav">
-                <ul>
-                    <li><a href="#complejo">Complejo</a></li>
-                    <li><a href="#categorias">Categorias</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#atracciones">Atracciones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li>Lenguaje</li>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">English</a>
+                        </div>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-
-        <h1 id="titulo-complejo">Nombre Del Complejo</h1>
-        <button><a href="https://www.google.com.ar" target="_blank">Web Check-In</a></button>
-        
-        <div id="booking">
-            <h2>Reserva Online</h2>
-
-            <div>
-                <div>
-                    <h3>Entrada</h3>
-                    <input type="date" name="fecha-entrada" id="" value="2022-04-03">
-                    <h3>Salida</h3>
-                    <input type="date" name="fecha-salida" id="" value="dd/mm/aaaa">
-                </div> 
-
-                <div><p id="mensaje-reserva">Cantidad de dias que Hospeda</p></div>
-
-                <div>
-                    <h3>Adulto(s)</h3>
-                    <input type="number" name="cantidad-adultos" id="" min="0" max="10">
-                    <h3>Niños(s)</h3>
-                    <input type="number" name="cantidad-ninos" id="" min="0" max="10">                     
-                </div>
-
-                <div><button type="submit">CONSULTAR</button></div>
             </div>
-                
+        </nav>
+
+        <div class="container-header">
+
+            <div class="container-slogan">
+                <h2 id="slogan">Sierra de la Ventana a tu medida</h2>
+                <button><a href="https://www.google.com.ar" target="_blank">Web Check-In</a></button>
+            </div>
+
+            <aside  >
+                <div id="booking" class="">
+                    <h2>Reserva Online</h2>
+        
+                    <div>
+                        <div>
+                            <h3>Entrada</h3>
+                            <input type="date" name="fecha-entrada" id="" value="2022-04-03">
+                            <h3>Salida</h3>
+                            <input type="date" name="fecha-salida" id="" value="dd/mm/aaaa">
+                        </div>
+        
+                        <div>
+                            <p id="mensaje-reserva">Cantidad de dias que Hospeda</p>
+                        </div>
+        
+                        <div>
+                            <h3>Adulto(s)</h3>
+                            <input type="number" name="cantidad-adultos" id="" min="0" max="10">
+                            <h3>Niños(s)</h3>
+                            <input type="number" name="cantidad-ninos" id="" min="0" max="10">
+                        </div>
+        
+                        <div><button type="submit">CONSULTAR</button></div>
+                    </div>         
+                </div>
+            </aside>
+
+
+
 
         </div>
+
+
 
 
     </header>
@@ -74,7 +116,9 @@
         </h2>
 
         <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus impedit possimus fugit excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam
+                dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus
+                impedit possimus fugit excepturi.</p>
         </div>
 
         <div class="galeria-complejo">
@@ -96,7 +140,9 @@
         </h2>
 
         <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus impedit possimus fugit excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam
+                dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus
+                impedit possimus fugit excepturi.</p>
         </div>
 
         <!-- Categoria 1 -->
@@ -137,7 +183,9 @@
         </h2>
 
         <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus impedit possimus fugit excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam
+                dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus
+                impedit possimus fugit excepturi.</p>
         </div>
 
         <div class="galeria">
@@ -154,13 +202,15 @@
 
     <!-- Surroundings Images-->
     <section id="atracciones">
-    
+
         <h2>
             Las Atracciones
         </h2>
 
         <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus impedit possimus fugit excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum inventore blanditiis, animi quibusdam
+                dolorem exercitationem mollitia, voluptate et corrupti deleniti ad voluptates est in molestiae natus
+                impedit possimus fugit excepturi.</p>
         </div>
 
         <div class="galeria-atracciones">
@@ -181,17 +231,17 @@
         <h2>¿En qué podemos ayudarte?</h2>
 
         <p>Nuestros agentes están preparados para resolver cualquier duda acerca del alojamiento. Escribinos.</p>
-        
+
         <div>
             <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y Apellido">
             <input type="email" name="email" id="email" placeholder="tuemail@tudominio.com">
             <input type="tel" name="telefono" id="telefono" placeholder="291-45781515">
         </div>
-        
+
         <div>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Su consulta."></textarea>
         </div>
-        
+
 
     </section>
 
@@ -201,13 +251,24 @@
         <h4>Nombre del Complejo</h4>
         <h4>Dirección</h4>
         <h4>Redes Sociales</h4>
-        
+
         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
         <p>Copyright</p>
     </footer>
-    
-<script src="/js/index.js"></script>
+
+
+    <!-- bootstrap scrept -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Specific JS -->
+    <script src="/js/index.js"></script>
 </body>
+
 </html>
