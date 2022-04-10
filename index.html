@@ -62,34 +62,44 @@
             </div>
         </nav>
 
-        <div class="container-header">
+        <div class="container-header row">
 
-            <div class="container-slogan">
+            <div class="container-slogan col-lg-6">
                 <h2 id="slogan">Sierra de la Ventana a tu medida</h2>
                 <button><a href="https://www.google.com.ar" target="_blank">Web Check-In</a></button>
             </div>
 
             <aside  >
-                <div id="booking" class="">
+                <div id="booking" class="col-lg-6">
                     <h2>Reserva Online</h2>
         
                     <div>
-                        <div>
-                            <h3>Entrada</h3>
-                            <input type="date" name="fecha-entrada" id="" value="2022-04-03">
-                            <h3>Salida</h3>
-                            <input type="date" name="fecha-salida" id="" value="dd/mm/aaaa">
+                        <div class="padre">
+                            <div class="contenido-booking">
+                                <h3>Entrada</h3>
+                                <input type="date" name="fecha-entrada" id="" value="2022-04-03">
+                            </div>
+                            <div class="contenido-booking">
+                                <h3>Salida</h3>
+                                <input type="date" name="fecha-salida" id="" value="dd/mm/aaaa">
+                            </div>
                         </div>
-        
+
                         <div>
                             <p id="mensaje-reserva">Cantidad de dias que Hospeda</p>
                         </div>
         
-                        <div>
-                            <h3>Adulto(s)</h3>
-                            <input type="number" name="cantidad-adultos" id="" min="0" max="10">
-                            <h3>Niños(s)</h3>
-                            <input type="number" name="cantidad-ninos" id="" min="0" max="10">
+                        <div class="padre">
+                            <div class="contenido-booking">
+                                <h3>Adulto(s)</h3>
+                                <input type="number" name="cantidad-adultos" id="" min="0" max="10">
+                            </div>
+
+                            <div class="contenido-booking">
+                                <h3>Niños(s)</h3>
+                                <input type="number" name="cantidad-ninos" id="" min="0" max="10">
+                            </div>
+
                         </div>
         
                         <div><button type="submit">CONSULTAR</button></div>
