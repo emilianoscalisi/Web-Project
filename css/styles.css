@@ -85,7 +85,7 @@ header {
 @media (max-width: 991px) {
     .container-slogan {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     header {
