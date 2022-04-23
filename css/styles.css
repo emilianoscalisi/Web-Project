@@ -1,8 +1,13 @@
 
-/* ---------------- Reset ---------------- */
+/* -------------------------------------------------- Reset --------------------------------------------------- */
 * {
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 
+}
+
+body {
+    text-align: center;
 }
 
 .row {
@@ -14,7 +19,7 @@ img {
 }
 
 
-/* ---------------- Nav Bar ---------------- */
+/* --------------------------------------------------- HEADER ------------------------------------------------- */
 .navbar-dark .navbar-nav .nav-link {
     color: aliceblue;
 }
@@ -80,7 +85,21 @@ header {
     margin-right: auto; 
 }
 
-/* ----------------- MEDIA QUERY ------------------------ */
+.nav-item {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+#titulo-complejo {
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+
+h3 {
+    font-family: 'Old Standard TT', serif;
+}
+
+/* ---------------------------------------------- MEDIA QUERY --------------------------------------------------- */
 
 @media (max-width: 991px) {
     .container-slogan {
@@ -104,4 +123,82 @@ header {
         width: 100%;
     }
 
+}
+
+/* ------------------------------------------------- SECCIONES ------------------------------------------------------ */
+
+section {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 2%;
+       
+}
+
+h2 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 2rem;
+}
+
+p {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 1.5rem;
+}
+
+
+/* ------------------ Complejo ---------------  */
+#complejo {
+    background-image: url("../img/Fondos/fondoSeccion.jpg");
+   
+}
+
+.galeria-complejo-img {
+    width: 220px;
+}
+
+.galeria-complejo-img:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+/* --------------- Categorias-------------------  */
+
+.carousel-item {
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+}
+
+.card-deck {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- Servicios -----  */
+#servicios {
+    background-image: url("../img/Fondos/fondoSeccion.jpg");
+   
+}
+/* ----- Atracciones -----  */
+
+/* ----- Contacto -----  */
+#contacto {
+    background-image: url("../img/Fondos/fondoSeccion.jpg");
+   
 }
