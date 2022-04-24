@@ -30,6 +30,16 @@ img {
     color: rgb(0, 0, 0) !important;
 }
 
+.idioma-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.navbar {
+padding-right: 20px;
+}
+
 #logo {
     width: 90px;
     border-radius: 50%;
@@ -180,6 +190,19 @@ p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3%;
+}
+
+.card-text {
+    width: 100%;
+}
+
+.text-muted {
+    cursor: pointer;
+}
+
+.dropup .dropdown-toggle {
+    color: black;
 }
 
 
