@@ -206,24 +206,22 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----- Servicios -----  */
 #servicios {
     background-image: url("../img/Fondos/fondoSeccion.jpg");
    
 }
+
+.galeria {
+    padding-left: 30%;
+    padding-right: 30%;
+    
+}
+
+.carousel-item {
+    height: 350px;
+}
+
 /* ----- Atracciones -----  */
 
 /* ----- Contacto -----  */
