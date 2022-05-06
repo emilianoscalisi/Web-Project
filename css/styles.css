@@ -212,20 +212,40 @@ p {
    
 }
 
+.carousel-item-personal {
+    height: 350px;
+}
+
 .galeria {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* ----- Atracciones -----  */
+.galeria-atracciones {
     padding-left: 30%;
     padding-right: 30%;
     
 }
-
-.carousel-item {
-    height: 350px;
-}
-
-/* ----- Atracciones -----  */
 
 /* ----- Contacto -----  */
 #contacto {
     background-image: url("../img/Fondos/fondoSeccion.jpg");
    
 }
+
+.cont-form {
+    width: 700;
+}
+
+.input-form {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.msg-form {
+    width: 640px;
+}
+
