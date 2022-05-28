@@ -79,26 +79,37 @@ header {
     background-color: rgba(255, 255, 255, .5);
 }
 
+.parrafo-check-in {
+    width: 100%;
+}
+
 .container-booking {
     margin-top: 20px;
 
-    width: 400px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto; 
 
-    padding: 30px;
+    padding: 10px;
 
     background-color: rgba(255, 255, 255, .5);
 }
 
 .fila-booking {
     display: flex;
+    padding-bottom: 20px;
 }
 
 .columna-booking {
     width: 100%;
     margin-left: auto;
     margin-right: auto; 
+
+    justify-content: left;
+}
+
+.columna-booking-rigth {
+    padding-left: 20px;
 }
 
 .nav-item {
@@ -115,6 +126,20 @@ h3 {
     font-family: 'Old Standard TT', serif;
 }
 
+.container-booking h3 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.fecha {
+    width: 100%;
+
+}
+
+.cantidad {
+    width: 100%;
+}
+
 .btn-consulta {
     color: white;
     font-weight: bold;
@@ -125,6 +150,10 @@ h3 {
     font-weight: bold;
 }
 
+#mensaje-reserva {
+    width: 100%;
+    font-size: 1rem;
+}
 
 /* ---------------------------------------------- MEDIA QUERY --------------------------------------------------- */
 

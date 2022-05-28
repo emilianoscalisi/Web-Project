@@ -80,7 +80,8 @@
                 <div class="col-lg-6">
 
                     <div class="container-slogan">
-                        <h2 id="slogan">Sierra de la Ventana a tu medida</h2>
+                        <!-- <h2 id="slogan">Sierra de la Ventana a tu medida</h2> -->
+                        <p class="parrafo-check-in">Si aún no realizaste tu check-in, accedé haciendo click en el siguiente botón</p>
                         <button class="btn-checkin btn btn-warning"><a href="https://www.google.com.ar" target="_blank">Web Check-In</a></button>
                     </div>
 
@@ -96,12 +97,12 @@
 
                             <div class="columna-booking">
                                 <h3>Entrada</h3>
-                                <input type="date" name="fecha-entrada" id="" value="2022-04-03">
+                                <input class="fecha" type="date" name="fecha-entrada" id="" value="2022-04-03">
                             </div>
 
-                            <div class="columna-booking">
+                            <div class="columna-booking columna-booking-rigth">
                                 <h3>Salida</h3>
-                                <input type="date" name="fecha-salida" id="" value="dd/mm/aaaa">
+                                <input class="fecha" type="date" name="fecha-salida" id="" value="dd/mm/aaaa">
                             </div>
 
                         </div>
@@ -114,12 +115,17 @@
 
                             <div class="columna-booking">
                                 <h3>Adulto(s)</h3>
-                                <input type="number" name="cantidad-adultos" id="" min="0" max="10">
+                                <input class="cantidad" type="number" name="cantidad-adultos" id="" min="0" max="10">
                             </div>
 
-                            <div class="columna-booking">
+                            <div class="columna-booking columna-booking-rigth">
                                 <h3>Niños(s)</h3>
-                                <input type="number" name="cantidad-ninos" id="" min="0" max="10">
+                                <input class="cantidad" type="number" name="cantidad-ninos" id="" min="0" max="10">
+                            </div>
+
+                            <div class="columna-booking columna-booking-rigth">
+                                <h3>Bebé(s)</h3>
+                                <input class="cantidad" type="number" name="cantidad-bebes" id="" min="0" max="10">
                             </div>
 
                         </div>
