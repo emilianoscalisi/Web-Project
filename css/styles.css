@@ -58,6 +58,9 @@ header {
     background-size: cover;
 }
 
+.dropdown-personal {
+    width: 100px;;
+}
 
 .container-header{ 
     padding-top: 120px;
@@ -165,6 +168,16 @@ h3 {
 
     header {
         height: 800px;   
+    }
+
+    .dropdown-personal {
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
     }
 
 }
