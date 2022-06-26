@@ -21,6 +21,12 @@ img {
 }
 
 
+/* --------------------------------------------------- BODY ------------------------------------------------- */
+body {
+    min-width:530px;
+    width: auto !important;  /* Firefox will set width as auto */
+}
+
 /* --------------------------------------------------- HEADER ------------------------------------------------- */
 .navbar-dark .navbar-nav .nav-link {
     color: aliceblue;
@@ -158,41 +164,6 @@ h3 {
     font-size: 1rem;
 }
 
-/* ---------------------------------------------- MEDIA QUERY --------------------------------------------------- */
-
-@media (max-width: 991px) {
-    .container-slogan {
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
-    header {
-        height: 800px;   
-    }
-
-    .dropdown-personal {
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-        color: black;
-    }
-
-}
-
-@media (max-width: 500px) {
-    .container-slogan {
-        margin-top: 160px;
-        width: 100%;
-    }
-
-    .container-booking {
-        width: 100%;
-    }
-
-}
 
 /* ------------------------------------------------- SECCIONES ------------------------------------------------------ */
 
@@ -353,3 +324,87 @@ footer a i{
 
 }
 
+/* ---------------------------------------------- MEDIA QUERY --------------------------------------------------- */
+
+@media (max-width: 991px) {
+    .container-slogan {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    header {
+        height: 800px;   
+    }
+
+    .dropdown-personal {
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    
+}
+
+@media (max-width: 650px) {
+    .msg-form {
+        width: 100%;
+    }
+
+    .input-form {
+        display:block;
+        width: 100%;
+    }
+
+    #nombre-apellido {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+
+    #email {
+        margin-right: 0px;
+
+    }
+
+    .galeria {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container-slogan {
+        margin-top: 160px;
+        width: 100%;
+    }
+
+    .container-booking {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .msg-form {
+        width: 100%;
+    }
+    
+    #nombre-apellido {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    
+    #email {
+        margin-right: 0px;
+    
+    }
+    
+    }
